@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MPI applications %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{BernholdtBoehmBosilcaVenkataGrantNaughtonPritchardSchulzVallee20,
+author={David E. Bernholdt and Swen Boehm and George Bosilca and
+Manjunath Gorentla Venkata and Ryan E. Grant and
+Thomas J. Naughton and Howard Pritchard and
+Martin Schulz and Geoffroy R. Vall{\'{e}}e},
+title={A survey of {MPI} usage in the {US} exascale computing project},
+journal=ccpe,
+volume=32,
+number=3,
+year=2020
+}
+
+@inproceedings{10.1145/3295500.3356176,
+author = {Laguna, Ignacio and Marshall, Ryan and Mohror, Kathryn and Ruefenacht, Martin and Skjellum, Anthony and Sultana, Nawrin},
+title = {A Large-Scale Study of MPI Usage in Open-Source HPC Applications},
+year = {2019},
+isbn = {9781450362290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3295500.3356176},
+doi = {10.1145/3295500.3356176},
+abstract = {Understanding the state-of-the-practice in MPI usage is paramount for many aspects of supercomputing, including optimizing the communication of HPC applications and informing standardization bodies and HPC systems procurements regarding the most important MPI features. Unfortunately, no previous study has characterized the use of MPI on applications at a significant scale; previous surveys focus either on small data samples or on MPI jobs of specific HPC centers. This paper presents the first comprehensive study of MPI usage in applications. We survey more than one hundred distinct MPI programs covering a significantly large space of the population of MPI applications. We focus on understanding the characteristics of MPI usage with respect to the most used features, code complexity, and programming models and languages. Our study corroborates certain findings previously reported on smaller data samples and presents a number of interesting, previously un-reported insights.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {31},
+numpages = {14},
+keywords = {program analysis, applications survey, MPI},
+location = {Denver, Colorado},
+series = {SC '19}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% MPI application mapping %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@misc{korndörfer2021mapping,
+      title={Mapping Matters: Application Process Mapping on 3-D Processor Topologies},
+      author={Jonas H. Müller Korndörfer and Mario Bielert and Laércio L. Pilla and Florina M. Ciorba},
+      year={2021},
+      eprint={2005.10413},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC}
+}
+
+@INPROCEEDINGS{8411068,
+
+  author={C. {Bordage} and E. {Jeannot}},
+
+  booktitle={2018 18th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)},
+
+  title={Process Affinity, Metrics and Impact on Performance: An Empirical Study},
+
+  year={2018},
+
+  volume={},
+
+  number={},
+
+  pages={523-532},
+
+  doi={10.1109/CCGRID.2018.00079}}
+
+@incollection{hoefler:hal-00921626,
+  TITLE = {{An Overview of Process Mapping Techniques and Algorithms in High-Performance Computing}},
+  AUTHOR = {Hoefler, Torsten and Jeannot, Emmanuel and Mercier, Guillaume},
+  URL = {https://hal.inria.fr/hal-00921626},
+  BOOKTITLE = {{High Performance Computing on Complex Environments}},
+  EDITOR = {Emmanuel Jeannot and Julius Zilinskas},
+  PUBLISHER = {{Wiley}},
+  PAGES = {75-94},
+  YEAR = {2014},
+  MONTH = Jun,
+  PDF = {https://hal.inria.fr/hal-00921626/file/Chapter_5.pdf},
+  HAL_ID = {hal-00921626},
+  HAL_VERSION = {v1},
+}
+
+@article{10.1007/s11227-014-1324-5,
+author = {Wu, Jingjin and Xiong, Xuanxing and Lan, Zhiling},
+title = {Hierarchical Task Mapping for Parallel Applications on Supercomputers},
+year = {2015},
+issue_date = {May       2015},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+volume = {71},
+number = {5},
+issn = {0920-8542},
+url = {https://doi.org/10.1007/s11227-014-1324-5},
+doi = {10.1007/s11227-014-1324-5},
+abstract = {As the scale of supercomputers grows, so does the size of the interconnect network. Topology-aware task mapping, which maps parallel application processes onto processors to reduce communication cost, becomes increasingly important. Previous works mainly focus on the task mapping between compute nodes (i.e., inter-node mapping), while ignoring the mapping within a node (i.e., intra-node mapping). In this paper, we propose a hierarchical task mapping strategy, which performs both inter-node and intra-node mapping. We consider supercomputers with popular fat-tree and torus network topologies, and introduce two mapping algorithms: (1) a generic recursive tree mapping algorithm, which can handle both inter-node mapping and intra-node mapping; (2) a recursive bipartitioning mapping algorithm for torus topology, which efficiently partitions the compute nodes according to their coordinates. Moreover, a hierarchical task mapping library is developed. Experimental results show that the proposed approach significantly improves the communication performance by up to 77 % with low runtime overhead.},
+journal = {J. Supercomput.},
+month = may,
+pages = {1776–1802},
+numpages = {27},
+keywords = {Parallel applications, Torus network, Topology-aware task mapping, Communication optimization, Hierarchical task mapping, Fat-tree network}
+}
+
+@inproceedings{jeannot:hal-00851148,
+  TITLE = {{Communication and Topology-aware Load Balancing in Charm++ with TreeMatch}},
+  AUTHOR = {Jeannot, Emmanuel and Meneses, Esteban and Mercier, Guillaume and Tessier, Fran{\c c}ois and Zheng, Gengbin},
+  URL = {https://hal.inria.fr/hal-00851148},
+  BOOKTITLE = {{IEEE Cluster 2013}},
+  ADDRESS = {Indianapolis, United States},
+  PUBLISHER = {{IEEE}},
+  YEAR = {2013},
+  MONTH = Sep,
+  KEYWORDS = {process placement ; load balancing ; message passing ; communication cost},
+  PDF = {https://hal.inria.fr/hal-00851148/file/publi.pdf},
+  HAL_ID = {hal-00851148},
+  HAL_VERSION = {v1},
+}
+
+@inproceedings{10.1145/1995896.1995909,
+author = {Hoefler, Torsten and Snir, Marc},
+title = {Generic Topology Mapping Strategies for Large-Scale Parallel Architectures},
+year = {2011},
+isbn = {9781450301022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1995896.1995909},
+doi = {10.1145/1995896.1995909},
+abstract = {The steadily increasing number of nodes in high-performance computing systems and the technology and power constraints lead to sparse network topologies. Efficient mapping of application communication patterns to the network topology gains importance as systems grow to petascale and beyond. Such mapping is supported in parallel programming frameworks such as MPI, but is often not well implemented. We show that the topology mapping problem is NP-complete and analyze and compare different practical topology mapping heuristics. We demonstrate an efficient and fast new heuristic which is based on graph similarity and show its utility with application communication patterns on real topologies. Our mapping strategies support heterogeneous networks and show significant reduction of congestion on torus, fat-tree, and the PERCS network topologies, for irregular communication patterns. We also demonstrate that the benefit of topology mapping grows with the network size and show how our algorithms can be used in a practical setting to optimize communication performance. Our efficient topology mapping strategies are shown to reduce network congestion by up to 80%, reduce average dilation by up to 50%, and improve benchmarked communication performance by 18%.},
+booktitle = {Proceedings of the International Conference on Supercomputing},
+pages = {75–84},
+numpages = {10},
+keywords = {mpi graph topologies, topology mapping},
+location = {Tucson, Arizona, USA},
+series = {ICS '11}
+}
+
+@article{GROPP201998,
+title = {Using node and socket information to implement MPI Cartesian topologies},
+journal = {Parallel Computing},
+volume = {85},
+pages = {98-108},
+year = {2019},
+issn = {0167-8191},
+doi = {https://doi.org/10.1016/j.parco.2019.01.001},
+url = {https://www.sciencedirect.com/science/article/pii/S0167819118303156},
+author = {William D. Gropp},
+keywords = {Message passing, MPI, Process topology, Cartesian process topology},
+abstract = {The MPI API provides support for Cartesian process topologies, including the option to reorder the processes to achieve better communication performance. But MPI implementations rarely provide anything useful for the reorder option, typically ignoring it. One argument made is that modern interconnects are fast enough that applications are less sensitive to the exact layout of processes onto the system. However, intranode communication performance is much greater than internode communication performance. In this paper, we show a simple approach that takes into account only information about which MPI processes are on the same node to provide a fast and effective implementation of the MPI Cartesian topology routine. While not optimal, this approach provides a significant improvement over all tested MPI implementations and provides an implementation that may be used as the default in any MPI implementation of MPI_Cart_create. We also explore the impact of taking into account the mapping of processes to processor chips or sockets, and show that this is both relatively easy to accomplish but provides only a small improvement in performance.}
+}
+
+@inproceedings{mercier:hal-00643151,
+  TITLE = {{Improving MPI Applications Performance on Multicore Clusters with Rank Reordering}},
+  AUTHOR = {Mercier, Guillaume and Jeannot, Emmanuel},
+  URL = {https://hal.inria.fr/hal-00643151},
+  BOOKTITLE = {{EuroMPI}},
+  ADDRESS = {Santorini, Italy},
+  EDITOR = {Springer},
+  SERIES = {Recent Advances in the Message Passing Interface - Proceedings of the 18th European MPI Users' Group Meeting},
+  VOLUME = {6960},
+  PAGES = {39-49},
+  YEAR = {2011},
+  MONTH = Sep,
+  DOI = {10.1007/978-3-642-24449-0},
+  KEYWORDS = {Message-Passing ; multicore architectures ; process placement ; rank reordering ; communication pattern},
+  PDF = {https://hal.inria.fr/hal-00643151/file/Mercier_Jeannot_eurompi2k11_final.pdf},
+  HAL_ID = {hal-00643151},
+  HAL_VERSION = {v1},
+}
+
+
+@article{jeannot:hal-00921605,
+  TITLE = {{Process Placement in Multicore Clusters: Algorithmic Issues and Practical Techniques}},
+  AUTHOR = {Jeannot, Emmanuel and Mercier, Guillaume and Tessier, Fran{\c c}ois},
+  URL = {https://hal.inria.fr/hal-00921605},
+  JOURNAL = {{IEEE Transactions on Parallel and Distributed Systems}},
+  PUBLISHER = {{Institute of Electrical and Electronics Engineers}},
+  VOLUME = {25},
+  NUMBER = {4},
+  PAGES = {993 - 1002},
+  YEAR = {2014},
+  DOI = {10.1109/TPDS.2013.104},
+  HAL_ID = {hal-00921605},
+  HAL_VERSION = {v1},
+}
+
+@article{10.5555/3195474.3195476,
+author = {Georgiou, Yiannis and Jeannot, Emmanuel and Mercier, Guillaume and Villiermet, Ad\`{e}le},
+title = {Topology-Aware Job Mapping},
+year = {2018},
+issue_date = {1 2018},
+publisher = {Sage Publications, Inc.},
+address = {USA},
+volume = {32},
+number = {1},
+issn = {1094-3420},
+abstract = {A Resource and Job Management System RJMS is a crucial system software part of the HPC stack. It is responsible for efficiently delivering computing power to applications in supercomputing environments. Its main intelligence relies on resource selection techniques to find the most adapted resources to schedule the users' jobs. This article introduces a new method that takes into account the topology of the machine and the application characteristics to determine the best choice among the available nodes of the platform, based upon the network topology and taking into account the application communication pattern. To validate our approach, we integrate this algorithm as a plugin for Simple Linux Utility for Resource Management SLURM, a well-known and widespread RJMS. We assess our plugin with different optimization schemes by comparing with the default topology-aware Slurm algorithm, using both emulation and simulation of a large-scale platform and by carrying out experiments in a real cluster. We show that transparently taking into account a job communication pattern and the topology allows for relevant performance gains.},
+journal = {Int. J. High Perform. Comput. Appl.},
+month = jan,
+pages = {14–27},
+numpages = {14},
+keywords = {topology, Algorithm, job scheduling, high-performance computing, process placement}
+}
+
+@inproceedings{10.1109/CLUSTER.2011.59,
+author = {Hursey, Joshua and Squyres, Jeffrey M. and Dontje, Terry},
+title = {Locality-Aware Parallel Process Mapping for Multi-Core HPC Systems},
+year = {2011},
+isbn = {9780769545165},
+publisher = {IEEE Computer Society},
+address = {USA},
+url = {https://doi.org/10.1109/CLUSTER.2011.59},
+doi = {10.1109/CLUSTER.2011.59},
+abstract = {High Performance Computing (HPC) systems are composed of servers containing an ever-increasing number of cores. With such high processor core counts, non-uniform memory access (NUMA) architectures are almost universally used to reduce inter-processor and memory communication bottlenecks by distributing processors and memory throughout a server-internal networking topology. Application studies have shown that the tuning of processes placement in a server's NUMA networking topology to the application can have a dramatic impact on performance. The performance implications are magnified when running a parallel job across multiple server nodes, especially with large scale HPC applications. This paper presents the Locality-Aware Mapping Algorithm (LAMA) for distributing the individual processes of a parallel application across processing resources in an HPC system, paying particular attention to the internal server NUMA topologies. The algorithm is able to support both homogeneous and heterogeneous hardware systems, and dynamically adapts to the available hardware and user-specified process layout at run-time. As implemented in Open MPI, the LAMA provides 362,880 mapping permutations and is able to naturally scale out to additional hardware resources as they become available in future architectures.},
+booktitle = {Proceedings of the 2011 IEEE International Conference on Cluster Computing},
+pages = {527–531},
+numpages = {5},
+keywords = {NUMA, MPI, Locality, Resource Management, Process Affinity},
+series = {CLUSTER '11}
+}
+
+@article{BRANDFASS2013372,
+title = {Rank reordering for MPI communication optimization},
+journal = {Computers & Fluids},
+volume = {80},
+pages = {372-380},
+year = {2013},
+note = {Selected contributions of the 23rd International Conference on Parallel Fluid Dynamics ParCFD2011},
+issn = {0045-7930},
+doi = {https://doi.org/10.1016/j.compfluid.2012.01.019},
+url = {https://www.sciencedirect.com/science/article/pii/S004579301200028X},
+author = {B. Brandfass and T. Alrutz and T. Gerhold},
+keywords = {Parallelization, Domain decomposition, Computational Fluid Dynamics, MPI rank reordering},
+abstract = {In this paper we describe a procedure for optimizing the MPI communication of an unstructured CFD code in a parallel multi-core environment. By reordering the MPI ranks, a mapping of MPI processes to CPU cores is established, such that the main communication takes place within the compute nodes. The motivation of this approach is based on the observation that the communication between CPU cores on the same compute node is usually much faster than the communication between CPU cores on different nodes. The generic nature of our approach provides an out-of-the-box optimization tool, which can be easily used with other CFD codes due to the external MPI rank reordering procedure. The optimization tool was successfully tested with the DLR TAU code and the results of the optimization are demonstrated by benchmark computations for different geometries of aircraft configurations.}
+}
+
+@inproceedings{10.1145/2802658.2802677,
+author = {Tr\"{a}ff, Jesper Larsson and L\"{u}bbe, Felix Donatus},
+title = {Specification Guideline Violations by MPI_Dims_create},
+year = {2015},
+isbn = {9781450337953},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2802658.2802677},
+doi = {10.1145/2802658.2802677},
+booktitle = {Proceedings of the 22nd European MPI Users' Group Meeting},
+articleno = {19},
+numpages = {2},
+location = {Bordeaux, France},
+series = {EuroMPI '15}
+}
+
+
+@inproceedings{10.1145/3236367.3236377,
+    author = {Gropp, William D.},
+    title = {Using Node Information to Implement MPI Cartesian Topologies},
+    year = {2018},
+    isbn = {9781450364928},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3236367.3236377},
+    doi = {10.1145/3236367.3236377},
+    abstract = {The MPI API provides support for Cartesian process topologies, including the option to reorder the processes to achieve better communication performance. But MPI implementations rarely provide anything useful for the reorder option, typically ignoring it. One argument made is that modern interconnects are fast enough that applications are less sensitive to the exact layout of processes onto the system. However, intranode communication performance is much greater than internode communication performance. In this paper, we show a simple approach that takes into account only information about which MPI processes are on the same node to provide a fast and effective implementation of the MPI Cartesian topology. While not optimal, this approach provides a significant improvement over all tested MPI implementations and provides an implementation that may be used as the default in any MPI implementation of MPI_Cart_create.},
+    booktitle = {Proceedings of the 25th European MPI Users' Group Meeting},
+    articleno = {18},
+    numpages = {9},
+    keywords = {Message passing, Cartesian process topology, Process topology, MPI},
+    location = {Barcelona, Spain},
+    series = {EuroMPI'18}
+    }
+
+@INPROCEEDINGS{9229644,
+
+  author={von Kirchbach, Konrad and Lehr, Markus and Hunold, Sascha and Schulz, Christian and Träff, Jesper Larsson},
+
+  booktitle={2020 IEEE International Conference on Cluster Computing (CLUSTER)},
+
+  title={Efficient Process-to-Node Mapping Algorithms for Stencil Computations},
+
+  year={2020},
+
+  volume={},
+
+  number={},
+
+  pages={1-11},
+
+  doi={10.1109/CLUSTER49012.2020.00011}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Hop-byte Metric %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@INPROCEEDINGS{6507513,
+
+  author={C. D. {Sudheer} and A. {Srinivasan}},
+
+  booktitle={2012 19th International Conference on High Performance Computing},
+
+  title={Optimization of the hop-byte metric for effective topology aware mapping},
+
+  year={2012},
+
+  volume={},
+
+  number={},
+
+  pages={1-9},
+
+  doi={10.1109/HiPC.2012.6507513}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% NOT SURE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@InProceedings{10.1007/978-3-030-57675-2_11,
+author="Gou, Changjiang
+and Zoobi, Ali Al
+and Benoit, Anne
+and Faverge, Mathieu
+and Marchal, Loris
+and Pichon, Gr{\'e}goire
+and Ramet, Pierre",
+editor="Malawski, Maciej
+and Rzadca, Krzysztof",
+title="Improving Mapping for Sparse Direct Solvers",
+booktitle="Euro-Par 2020: Parallel Processing",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="167--182",
+abstract="In order to express parallelism, parallel sparse direct solvers take advantage of the elimination tree to exhibit tree-shaped task graphs, where nodes represent computational tasks and edges represent data dependencies. One of the pre-processing stages of sparse direct solvers consists of mapping computational resources (processors) to these tasks. The objective is to minimize the factorization time by exhibiting good data locality and load balancing. The proportional mapping technique is a widely used approach to solve this resource-allocation problem. It achieves good data locality by assigning the same processors to large parts of the elimination tree. However, it may limit load balancing in some cases. In this paper, we propose a dynamic mapping algorithm based on proportional mapping. This new approach, named Steal, relaxes the data locality criterion to improve load balancing. In order to validate the newly introduced method, we perform extensive experiments on the PaStiX sparse direct solver. It demonstrates that our algorithm enables better static scheduling of the numerical factorization while keeping good data locality.",
+isbn="978-3-030-57675-2"
+}
